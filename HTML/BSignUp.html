@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/CSS_Local/registeruser.css">
+    
+  
+</head>
+<body>
+    <nav class="navbar navbar-expand-md  bg-dark navbar-dark">
+        <div class="container">
+            <a href="BHomePage.html" class="navbar-brand " >Airline Reservation</a>
+           <buttun class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+               <span class="navbar-toggler-icon"></span>
+           </buttun>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a href="#flight-info" class="nav-link">Flight Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-us" class="nav-link">About Us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="BLoginPage.html" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#signup" class="nav-link">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="box">
+        <h2>Register User</h2>
+        <form name="myform" onsubmit="return(valid())">
+            <div class="inputBox" >
+                <input type="text" name="" required="">
+                <label id="lb" >Full Name</label>
+            </div>
+            <div class="inputBox" >
+                <input type="email" name="" required="">
+                <label id="lb1" >Email Address</label>
+            </div>
+            <div class="inputBox" >
+                <input type="number" maxlength="10" name="phone" required="">
+                <label id="lb2" >Phone Number</label>
+            </div>
+            <div class="inputBox" >
+                <input type="password" name="password" required="">
+                <label id="lb3" >Password</label>
+            </div>
+            <div class="inputBox" >
+                <input type="password" name="cpassword" required="">
+                <label id="lb4">Confirm Password</label>
+            </div>
+            <input type="submit"  value="Register">
+            <input type="reset" name="" value="Cancel">
+        </form>
+    </div>
+    <script src="/JavaScript/validateregistration.js"></script>
+    <script src="/js/bootstrap.js"></script>
+</body>
+</html>
